@@ -34,7 +34,7 @@ namespace FormativePROG
                 Console.Write("Enter your name:");
 
                 name = Console.ReadLine();
-
+                // Exception handling 
                 try
                 {
 
