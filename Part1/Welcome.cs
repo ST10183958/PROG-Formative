@@ -36,6 +36,12 @@ namespace Part1
             Console.WriteLine(new string('=', 25));
             Console.ResetColor();
         }
+        internal static void ChatBotDraw(string title)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(title);
+            Console.ResetColor();
+        }
 
 
 

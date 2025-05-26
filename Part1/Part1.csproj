@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DryIoc.dll" Version="5.4.3" />
     <PackageReference Include="Figgle" Version="0.5.1" />
   </ItemGroup>
 

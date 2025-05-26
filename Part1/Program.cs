@@ -1,24 +1,29 @@
 ﻿using System.Threading;
 using System.Media;
 using Part1;
+using System.Xml.Linq;
 
 
 namespace FormativePROG
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
-            Welcome.ShowWelcomeScreen();
+            // Welcome.ShowWelcomeScreen();
             //System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\Audio\ElevenLabs_Text_to_Speech_audio.mp3");
             //player.Play();
 
-            object Username = UsernameInput();
+            //object Username = UsernameInput();
 
-            Welcome.DrawBorder2($"Greetinngs {Username}");
+            //  Welcome.DrawBorder2($"Greetinngs {Username}");
 
-            Responses();
-            Console.WriteLine("Finished");
+            // Responses();
+
+            Part2.Part2Main();
+           
+
         }
 
 
@@ -140,39 +145,22 @@ namespace FormativePROG
                     Welcome.ErrorDraw("Error: " + e.Message);
 
                 }
-
-
-
             }
-
-
-
-
-
-
 
         }
 
-
-
+        // Method to handle the delay
         static void Delayer()
         {
-
             for (int looper = 0; looper < 4; looper++)
             {
-
                 Thread.Sleep(800);
 
                 Console.Write('*');
 
                 continue;
-
             }
-
             Console.WriteLine("--------------");
-
-
-
         }
 
 
